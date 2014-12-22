@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51E186301A485A77009D5E18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1862F1A485A77009D5E18 /* AppDelegate.swift */; };
+		51E186331A485A77009D5E18 /* Phobot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51E186311A485A77009D5E18 /* Phobot.xcdatamodeld */; };
+		51E186351A485A77009D5E18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186341A485A77009D5E18 /* ViewController.swift */; };
+		51E186381A485A77009D5E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E186361A485A77009D5E18 /* Main.storyboard */; };
+		51E1863A1A485A77009D5E18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E186391A485A77009D5E18 /* Images.xcassets */; };
+		51E1863D1A485A77009D5E18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1863B1A485A77009D5E18 /* LaunchScreen.xib */; };
+		51E186491A485A77009D5E18 /* PhobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186481A485A77009D5E18 /* PhobotTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51E186431A485A77009D5E18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51E186221A485A77009D5E18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51E186291A485A77009D5E18;
+			remoteInfo = Phobot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		51E1862A1A485A77009D5E18 /* Phobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E1862E1A485A77009D5E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51E1862F1A485A77009D5E18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51E186321A485A77009D5E18 /* Phobot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phobot.xcdatamodel; sourceTree = "<group>"; };
+		51E186341A485A77009D5E18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51E186371A485A77009D5E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51E186391A485A77009D5E18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		51E1863C1A485A77009D5E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		51E186421A485A77009D5E18 /* PhobotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhobotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E186471A485A77009D5E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51E186481A485A77009D5E18 /* PhobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhobotTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51E186271A485A77009D5E18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E1863F1A485A77009D5E18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51E186211A485A77009D5E18 = {
+			isa = PBXGroup;
+			children = (
+				51E1862C1A485A77009D5E18 /* Phobot */,
+				51E186451A485A77009D5E18 /* PhobotTests */,
+				51E1862B1A485A77009D5E18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51E1862B1A485A77009D5E18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51E1862A1A485A77009D5E18 /* Phobot.app */,
+				51E186421A485A77009D5E18 /* PhobotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51E1862C1A485A77009D5E18 /* Phobot */ = {
+			isa = PBXGroup;
+			children = (
+				51E1862F1A485A77009D5E18 /* AppDelegate.swift */,
+				51E186341A485A77009D5E18 /* ViewController.swift */,
+				51E186361A485A77009D5E18 /* Main.storyboard */,
+				51E186391A485A77009D5E18 /* Images.xcassets */,
+				51E1863B1A485A77009D5E18 /* LaunchScreen.xib */,
+				51E186311A485A77009D5E18 /* Phobot.xcdatamodeld */,
+				51E1862D1A485A77009D5E18 /* Supporting Files */,
+			);
+			path = Phobot;
+			sourceTree = "<group>";
+		};
+		51E1862D1A485A77009D5E18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				51E1862E1A485A77009D5E18 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51E186451A485A77009D5E18 /* PhobotTests */ = {
+			isa = PBXGroup;
+			children = (
+				51E186481A485A77009D5E18 /* PhobotTests.swift */,
+				51E186461A485A77009D5E18 /* Supporting Files */,
+			);
+			path = PhobotTests;
+			sourceTree = "<group>";
+		};
+		51E186461A485A77009D5E18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				51E186471A485A77009D5E18 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51E186291A485A77009D5E18 /* Phobot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E1864C1A485A77009D5E18 /* Build configuration list for PBXNativeTarget "Phobot" */;
+			buildPhases = (
+				51E186261A485A77009D5E18 /* Sources */,
+				51E186271A485A77009D5E18 /* Frameworks */,
+				51E186281A485A77009D5E18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Phobot;
+			productName = Phobot;
+			productReference = 51E1862A1A485A77009D5E18 /* Phobot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		51E186411A485A77009D5E18 /* PhobotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E1864F1A485A77009D5E18 /* Build configuration list for PBXNativeTarget "PhobotTests" */;
+			buildPhases = (
+				51E1863E1A485A77009D5E18 /* Sources */,
+				51E1863F1A485A77009D5E18 /* Frameworks */,
+				51E186401A485A77009D5E18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51E186441A485A77009D5E18 /* PBXTargetDependency */,
+			);
+			name = PhobotTests;
+			productName = PhobotTests;
+			productReference = 51E186421A485A77009D5E18 /* PhobotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51E186221A485A77009D5E18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Tanel Teemusk";
+				TargetAttributes = {
+					51E186291A485A77009D5E18 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					51E186411A485A77009D5E18 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 51E186291A485A77009D5E18;
+					};
+				};
+			};
+			buildConfigurationList = 51E186251A485A77009D5E18 /* Build configuration list for PBXProject "Phobot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51E186211A485A77009D5E18;
+			productRefGroup = 51E1862B1A485A77009D5E18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51E186291A485A77009D5E18 /* Phobot */,
+				51E186411A485A77009D5E18 /* PhobotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51E186281A485A77009D5E18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E186381A485A77009D5E18 /* Main.storyboard in Resources */,
+				51E1863D1A485A77009D5E18 /* LaunchScreen.xib in Resources */,
+				51E1863A1A485A77009D5E18 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E186401A485A77009D5E18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51E186261A485A77009D5E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E186351A485A77009D5E18 /* ViewController.swift in Sources */,
+				51E186301A485A77009D5E18 /* AppDelegate.swift in Sources */,
+				51E186331A485A77009D5E18 /* Phobot.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E1863E1A485A77009D5E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E186491A485A77009D5E18 /* PhobotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51E186441A485A77009D5E18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51E186291A485A77009D5E18 /* Phobot */;
+			targetProxy = 51E186431A485A77009D5E18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		51E186361A485A77009D5E18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51E186371A485A77009D5E18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		51E1863B1A485A77009D5E18 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51E1863C1A485A77009D5E18 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51E1864A1A485A77009D5E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		51E1864B1A485A77009D5E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51E1864D1A485A77009D5E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Phobot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		51E1864E1A485A77009D5E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Phobot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		51E186501A485A77009D5E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhobotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phobot.app/Phobot";
+			};
+			name = Debug;
+		};
+		51E186511A485A77009D5E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhobotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phobot.app/Phobot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51E186251A485A77009D5E18 /* Build configuration list for PBXProject "Phobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E1864A1A485A77009D5E18 /* Debug */,
+				51E1864B1A485A77009D5E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E1864C1A485A77009D5E18 /* Build configuration list for PBXNativeTarget "Phobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E1864D1A485A77009D5E18 /* Debug */,
+				51E1864E1A485A77009D5E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		51E1864F1A485A77009D5E18 /* Build configuration list for PBXNativeTarget "PhobotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E186501A485A77009D5E18 /* Debug */,
+				51E186511A485A77009D5E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		51E186311A485A77009D5E18 /* Phobot.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				51E186321A485A77009D5E18 /* Phobot.xcdatamodel */,
+			);
+			currentVersion = 51E186321A485A77009D5E18 /* Phobot.xcdatamodel */;
+			path = Phobot.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 51E186221A485A77009D5E18 /* Project object */;
+}
