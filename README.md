@@ -20,5 +20,6 @@ let clientsecret = "YOUR CLIENT SECRET";
 Run the app on simulator or on your phone and you're good to go.
 
 <b>Specs</b>
+
 Written in Swift
-App uses Core Data to save information
+<br>App uses Core Data to save information
