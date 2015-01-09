@@ -12,10 +12,12 @@ It has less than 20 likes already, User has not been liked before (1000 memorize
 ###How to make it work
 
 You need intalled xcode to compile this project.
-Also you need to make your own instagram app. you can do this at
-http://instagram.com/developer/
-Register new application and you'll get cliend ID and client secret from there. Add them yo ViewController.swift class on top in these lines:
 
+Also you need to make your own instagram app. you can do this at
+
+http://instagram.com/developer/
+
+Register new application and you'll get cliend ID and client secret from there. Add them yo ViewController.swift class on top in these lines:
 let clientid = "YOUR CLIENT ID HERE";
 let clientsecret = "YOUR CLIENT SECRET";
 Run the app on simulator or on your phone and you're good to go.
