@@ -14,6 +14,20 @@
 		51E1863A1A485A77009D5E18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E186391A485A77009D5E18 /* Images.xcassets */; };
 		51E1863D1A485A77009D5E18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1863B1A485A77009D5E18 /* LaunchScreen.xib */; };
 		51E186491A485A77009D5E18 /* PhobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186481A485A77009D5E18 /* PhobotTests.swift */; };
+		51E186531A485CFA009D5E18 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186521A485CFA009D5E18 /* Model.swift */; };
+		51E186611A485FF2009D5E18 /* Dictionary+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186561A485FF2009D5E18 /* Dictionary+OAuthSwift.swift */; };
+		51E186621A485FF2009D5E18 /* NSURL+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186571A485FF2009D5E18 /* NSURL+OAuthSwift.swift */; };
+		51E186631A485FF2009D5E18 /* String+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186581A485FF2009D5E18 /* String+OAuthSwift.swift */; };
+		51E186641A485FF2009D5E18 /* HMACSHA1Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865A1A485FF2009D5E18 /* HMACSHA1Signature.m */; };
+		51E186651A485FF2009D5E18 /* OAuth1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865B1A485FF2009D5E18 /* OAuth1Swift.swift */; };
+		51E186661A485FF2009D5E18 /* OAuth2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865C1A485FF2009D5E18 /* OAuth2Swift.swift */; };
+		51E186671A485FF2009D5E18 /* OAuthSwiftClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865E1A485FF2009D5E18 /* OAuthSwiftClient.swift */; };
+		51E186681A485FF2009D5E18 /* OAuthSwiftCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865F1A485FF2009D5E18 /* OAuthSwiftCredential.swift */; };
+		51E186691A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186601A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift */; };
+		51E186A41A49AD5F009D5E18 /* InstaLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186A31A49AD5F009D5E18 /* InstaLoader.swift */; };
+		51E186A61A49B1C3009D5E18 /* InstaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186A51A49B1C3009D5E18 /* InstaItem.swift */; };
+		51E186A81A49B225009D5E18 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186A71A49B225009D5E18 /* SwiftyJSON.swift */; };
+		51E186AA1A4AC022009D5E18 /* SendLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186A91A4AC022009D5E18 /* SendLike.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +52,22 @@
 		51E186421A485A77009D5E18 /* PhobotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhobotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E186471A485A77009D5E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E186481A485A77009D5E18 /* PhobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhobotTests.swift; sourceTree = "<group>"; };
+		51E186521A485CFA009D5E18 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		51E186561A485FF2009D5E18 /* Dictionary+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+OAuthSwift.swift"; sourceTree = "<group>"; };
+		51E186571A485FF2009D5E18 /* NSURL+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+OAuthSwift.swift"; sourceTree = "<group>"; };
+		51E186581A485FF2009D5E18 /* String+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+OAuthSwift.swift"; sourceTree = "<group>"; };
+		51E186591A485FF2009D5E18 /* HMACSHA1Signature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMACSHA1Signature.h; sourceTree = "<group>"; };
+		51E1865A1A485FF2009D5E18 /* HMACSHA1Signature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMACSHA1Signature.m; sourceTree = "<group>"; };
+		51E1865B1A485FF2009D5E18 /* OAuth1Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth1Swift.swift; sourceTree = "<group>"; };
+		51E1865C1A485FF2009D5E18 /* OAuth2Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Swift.swift; sourceTree = "<group>"; };
+		51E1865D1A485FF2009D5E18 /* OAuthSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		51E1865E1A485FF2009D5E18 /* OAuthSwiftClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSwiftClient.swift; sourceTree = "<group>"; };
+		51E1865F1A485FF2009D5E18 /* OAuthSwiftCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSwiftCredential.swift; sourceTree = "<group>"; };
+		51E186601A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSwiftHTTPRequest.swift; sourceTree = "<group>"; };
+		51E186A31A49AD5F009D5E18 /* InstaLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaLoader.swift; sourceTree = "<group>"; };
+		51E186A51A49B1C3009D5E18 /* InstaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaItem.swift; sourceTree = "<group>"; };
+		51E186A71A49B225009D5E18 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		51E186A91A4AC022009D5E18 /* SendLike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendLike.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +94,7 @@
 				51E1862C1A485A77009D5E18 /* Phobot */,
 				51E186451A485A77009D5E18 /* PhobotTests */,
 				51E1862B1A485A77009D5E18 /* Products */,
+				51E186541A485FF2009D5E18 /* OAuthSwift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,11 +111,16 @@
 			isa = PBXGroup;
 			children = (
 				51E1862F1A485A77009D5E18 /* AppDelegate.swift */,
+				51E186521A485CFA009D5E18 /* Model.swift */,
 				51E186341A485A77009D5E18 /* ViewController.swift */,
+				51E186A31A49AD5F009D5E18 /* InstaLoader.swift */,
+				51E186A91A4AC022009D5E18 /* SendLike.swift */,
+				51E186A51A49B1C3009D5E18 /* InstaItem.swift */,
 				51E186361A485A77009D5E18 /* Main.storyboard */,
 				51E186391A485A77009D5E18 /* Images.xcassets */,
 				51E1863B1A485A77009D5E18 /* LaunchScreen.xib */,
 				51E186311A485A77009D5E18 /* Phobot.xcdatamodeld */,
+				51E186A71A49B225009D5E18 /* SwiftyJSON.swift */,
 				51E1862D1A485A77009D5E18 /* Supporting Files */,
 			);
 			path = Phobot;
@@ -113,6 +149,32 @@
 				51E186471A485A77009D5E18 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51E186541A485FF2009D5E18 /* OAuthSwift */ = {
+			isa = PBXGroup;
+			children = (
+				51E186551A485FF2009D5E18 /* extension */,
+				51E186591A485FF2009D5E18 /* HMACSHA1Signature.h */,
+				51E1865A1A485FF2009D5E18 /* HMACSHA1Signature.m */,
+				51E1865B1A485FF2009D5E18 /* OAuth1Swift.swift */,
+				51E1865C1A485FF2009D5E18 /* OAuth2Swift.swift */,
+				51E1865D1A485FF2009D5E18 /* OAuthSwift-Bridging-Header.h */,
+				51E1865E1A485FF2009D5E18 /* OAuthSwiftClient.swift */,
+				51E1865F1A485FF2009D5E18 /* OAuthSwiftCredential.swift */,
+				51E186601A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift */,
+			);
+			path = OAuthSwift;
+			sourceTree = "<group>";
+		};
+		51E186551A485FF2009D5E18 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				51E186561A485FF2009D5E18 /* Dictionary+OAuthSwift.swift */,
+				51E186571A485FF2009D5E18 /* NSURL+OAuthSwift.swift */,
+				51E186581A485FF2009D5E18 /* String+OAuthSwift.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +226,7 @@
 				TargetAttributes = {
 					51E186291A485A77009D5E18 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4QK6J4R9ZF;
 					};
 					51E186411A485A77009D5E18 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -215,9 +278,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E186A61A49B1C3009D5E18 /* InstaItem.swift in Sources */,
+				51E186661A485FF2009D5E18 /* OAuth2Swift.swift in Sources */,
+				51E186691A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift in Sources */,
+				51E186AA1A4AC022009D5E18 /* SendLike.swift in Sources */,
 				51E186351A485A77009D5E18 /* ViewController.swift in Sources */,
 				51E186301A485A77009D5E18 /* AppDelegate.swift in Sources */,
+				51E186631A485FF2009D5E18 /* String+OAuthSwift.swift in Sources */,
+				51E186621A485FF2009D5E18 /* NSURL+OAuthSwift.swift in Sources */,
+				51E186611A485FF2009D5E18 /* Dictionary+OAuthSwift.swift in Sources */,
+				51E186671A485FF2009D5E18 /* OAuthSwiftClient.swift in Sources */,
 				51E186331A485A77009D5E18 /* Phobot.xcdatamodeld in Sources */,
+				51E186641A485FF2009D5E18 /* HMACSHA1Signature.m in Sources */,
+				51E186A81A49B225009D5E18 /* SwiftyJSON.swift in Sources */,
+				51E186651A485FF2009D5E18 /* OAuth1Swift.swift in Sources */,
+				51E186681A485FF2009D5E18 /* OAuthSwiftCredential.swift in Sources */,
+				51E186A41A49AD5F009D5E18 /* InstaLoader.swift in Sources */,
+				51E186531A485CFA009D5E18 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -340,9 +417,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Phobot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "OAuthSwift/OAuthSwift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -350,9 +432,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Phobot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "OAuthSwift/OAuthSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +496,7 @@
 				51E1864E1A485A77009D5E18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51E1864F1A485A77009D5E18 /* Build configuration list for PBXNativeTarget "PhobotTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +505,7 @@
 				51E186511A485A77009D5E18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
