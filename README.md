@@ -10,6 +10,7 @@ The photo liked will have to fall under the following conditions.
 It has less than 20 likes already, User has not been liked before (1000 memorized)
 
 <b>How to make it work</b>
+
 You need intalled xcode to compile this project.
 Also you need to make your own instagram app. you can do this at
 http://instagram.com/developer/
