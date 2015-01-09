@@ -12,8 +12,8 @@ class ViewController: UIViewController, InstaLoaderDelegate, UITextFieldDelegate
 
     
     
-    let clientid = "cc2ae60f511240f8a2462937bb612924";
-    let clientsecret = "b0ad13876e1f4d889879ec2f225fdbea";
+    let clientid = "YOUR CLIENT ID HERE";
+    let clientsecret = "YOUR CLIENT SECRET";
     var access_token = "";
     
     @IBOutlet weak var txt_countdown: UILabel!
