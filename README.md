@@ -1,6 +1,8 @@
 # Phobot
 Instagram bot iPhone app. Will add likes to a chosen hashtag. written in swift.
 
+### This project uses Swift 1.1 and has not been updated to newer versions.
+
 ###Ok, it works as follows:
 - you open the app and log in with instagram account
 - back to app you'll see a textfield on top. Add a hashtag without "#" in there
