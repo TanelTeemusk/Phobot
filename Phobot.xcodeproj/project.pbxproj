@@ -7,27 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51BD31841B33542400726F96 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD31831B33542400726F96 /* SwiftyJSON.swift */; };
 		51E186301A485A77009D5E18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1862F1A485A77009D5E18 /* AppDelegate.swift */; };
 		51E186331A485A77009D5E18 /* Phobot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51E186311A485A77009D5E18 /* Phobot.xcdatamodeld */; };
-		51E186351A485A77009D5E18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186341A485A77009D5E18 /* ViewController.swift */; };
 		51E186381A485A77009D5E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E186361A485A77009D5E18 /* Main.storyboard */; };
 		51E1863A1A485A77009D5E18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E186391A485A77009D5E18 /* Images.xcassets */; };
 		51E1863D1A485A77009D5E18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E1863B1A485A77009D5E18 /* LaunchScreen.xib */; };
 		51E186491A485A77009D5E18 /* PhobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186481A485A77009D5E18 /* PhobotTests.swift */; };
 		51E186531A485CFA009D5E18 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186521A485CFA009D5E18 /* Model.swift */; };
-		51E186611A485FF2009D5E18 /* Dictionary+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186561A485FF2009D5E18 /* Dictionary+OAuthSwift.swift */; };
-		51E186621A485FF2009D5E18 /* NSURL+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186571A485FF2009D5E18 /* NSURL+OAuthSwift.swift */; };
-		51E186631A485FF2009D5E18 /* String+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186581A485FF2009D5E18 /* String+OAuthSwift.swift */; };
-		51E186641A485FF2009D5E18 /* HMACSHA1Signature.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865A1A485FF2009D5E18 /* HMACSHA1Signature.m */; };
-		51E186651A485FF2009D5E18 /* OAuth1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865B1A485FF2009D5E18 /* OAuth1Swift.swift */; };
-		51E186661A485FF2009D5E18 /* OAuth2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865C1A485FF2009D5E18 /* OAuth2Swift.swift */; };
-		51E186671A485FF2009D5E18 /* OAuthSwiftClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865E1A485FF2009D5E18 /* OAuthSwiftClient.swift */; };
-		51E186681A485FF2009D5E18 /* OAuthSwiftCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1865F1A485FF2009D5E18 /* OAuthSwiftCredential.swift */; };
-		51E186691A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186601A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift */; };
 		51E186A41A49AD5F009D5E18 /* InstaLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186A31A49AD5F009D5E18 /* InstaLoader.swift */; };
 		51E186A61A49B1C3009D5E18 /* InstaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186A51A49B1C3009D5E18 /* InstaItem.swift */; };
-		51E186A81A49B225009D5E18 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186A71A49B225009D5E18 /* SwiftyJSON.swift */; };
 		51E186AA1A4AC022009D5E18 /* SendLike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E186A91A4AC022009D5E18 /* SendLike.swift */; };
+		51E897E91A66550400EFD994 /* SelectMethodViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E897E81A66550400EFD994 /* SelectMethodViewControllerTableViewController.swift */; };
+		51E897EB1A666C6600EFD994 /* InstaWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E897EA1A666C6600EFD994 /* InstaWrapper.swift */; };
+		51E897ED1A667C5800EFD994 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E897EC1A667C5800EFD994 /* FeedLoader.swift */; };
+		51E897EF1A66810C00EFD994 /* BotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E897EE1A66810C00EFD994 /* BotViewController.swift */; };
+		51E897F11A66841700EFD994 /* TargetSelectorClassic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E897F01A66841700EFD994 /* TargetSelectorClassic.swift */; };
+		51E897F31A66D72D00EFD994 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E897F21A66D72D00EFD994 /* SettingsViewController.swift */; };
+		51F2B0561B1516FA000EF8BA /* Dictionary+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0451B1516FA000EF8BA /* Dictionary+OAuthSwift.swift */; };
+		51F2B0571B1516FA000EF8BA /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0461B1516FA000EF8BA /* HMAC.swift */; };
+		51F2B0581B1516FA000EF8BA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51F2B0471B1516FA000EF8BA /* Info.plist */; };
+		51F2B0591B1516FA000EF8BA /* Int+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0481B1516FA000EF8BA /* Int+OAuthSwift.swift */; };
+		51F2B05A1B1516FA000EF8BA /* NSData+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0491B1516FA000EF8BA /* NSData+OAuthSwift.swift */; };
+		51F2B05B1B1516FA000EF8BA /* NSURL+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B04A1B1516FA000EF8BA /* NSURL+OAuthSwift.swift */; };
+		51F2B05C1B1516FA000EF8BA /* OAuth1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B04B1B1516FA000EF8BA /* OAuth1Swift.swift */; };
+		51F2B05D1B1516FA000EF8BA /* OAuth2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B04C1B1516FA000EF8BA /* OAuth2Swift.swift */; };
+		51F2B05E1B1516FA000EF8BA /* OAuthSwiftClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B04E1B1516FA000EF8BA /* OAuthSwiftClient.swift */; };
+		51F2B05F1B1516FA000EF8BA /* OAuthSwiftCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B04F1B1516FA000EF8BA /* OAuthSwiftCredential.swift */; };
+		51F2B0601B1516FA000EF8BA /* OAuthSwiftHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0501B1516FA000EF8BA /* OAuthSwiftHTTPRequest.swift */; };
+		51F2B0611B1516FA000EF8BA /* OAuthSwiftURLHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0511B1516FA000EF8BA /* OAuthSwiftURLHandlerType.swift */; };
+		51F2B0621B1516FA000EF8BA /* OAuthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0521B1516FA000EF8BA /* OAuthWebViewController.swift */; };
+		51F2B0631B1516FA000EF8BA /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0531B1516FA000EF8BA /* SHA1.swift */; };
+		51F2B0641B1516FA000EF8BA /* String+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0541B1516FA000EF8BA /* String+OAuthSwift.swift */; };
+		51F2B0651B1516FA000EF8BA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F2B0551B1516FA000EF8BA /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51BD31831B33542400726F96 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		51E1862A1A485A77009D5E18 /* Phobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E1862E1A485A77009D5E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E1862F1A485A77009D5E18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51E186321A485A77009D5E18 /* Phobot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phobot.xcdatamodel; sourceTree = "<group>"; };
-		51E186341A485A77009D5E18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		51E186371A485A77009D5E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51E186391A485A77009D5E18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		51E1863C1A485A77009D5E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -53,21 +65,32 @@
 		51E186471A485A77009D5E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E186481A485A77009D5E18 /* PhobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhobotTests.swift; sourceTree = "<group>"; };
 		51E186521A485CFA009D5E18 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		51E186561A485FF2009D5E18 /* Dictionary+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+OAuthSwift.swift"; sourceTree = "<group>"; };
-		51E186571A485FF2009D5E18 /* NSURL+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+OAuthSwift.swift"; sourceTree = "<group>"; };
-		51E186581A485FF2009D5E18 /* String+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+OAuthSwift.swift"; sourceTree = "<group>"; };
-		51E186591A485FF2009D5E18 /* HMACSHA1Signature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMACSHA1Signature.h; sourceTree = "<group>"; };
-		51E1865A1A485FF2009D5E18 /* HMACSHA1Signature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMACSHA1Signature.m; sourceTree = "<group>"; };
-		51E1865B1A485FF2009D5E18 /* OAuth1Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth1Swift.swift; sourceTree = "<group>"; };
-		51E1865C1A485FF2009D5E18 /* OAuth2Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Swift.swift; sourceTree = "<group>"; };
-		51E1865D1A485FF2009D5E18 /* OAuthSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		51E1865E1A485FF2009D5E18 /* OAuthSwiftClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSwiftClient.swift; sourceTree = "<group>"; };
-		51E1865F1A485FF2009D5E18 /* OAuthSwiftCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSwiftCredential.swift; sourceTree = "<group>"; };
-		51E186601A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSwiftHTTPRequest.swift; sourceTree = "<group>"; };
 		51E186A31A49AD5F009D5E18 /* InstaLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaLoader.swift; sourceTree = "<group>"; };
 		51E186A51A49B1C3009D5E18 /* InstaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaItem.swift; sourceTree = "<group>"; };
-		51E186A71A49B225009D5E18 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		51E186A91A4AC022009D5E18 /* SendLike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendLike.swift; sourceTree = "<group>"; };
+		51E897E81A66550400EFD994 /* SelectMethodViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMethodViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		51E897EA1A666C6600EFD994 /* InstaWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaWrapper.swift; sourceTree = "<group>"; };
+		51E897EC1A667C5800EFD994 /* FeedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		51E897EE1A66810C00EFD994 /* BotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BotViewController.swift; sourceTree = "<group>"; };
+		51E897F01A66841700EFD994 /* TargetSelectorClassic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetSelectorClassic.swift; sourceTree = "<group>"; };
+		51E897F21A66D72D00EFD994 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		51F2B0451B1516FA000EF8BA /* Dictionary+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary+OAuthSwift.swift"; path = "OAuthSwift/Dictionary+OAuthSwift.swift"; sourceTree = "<group>"; };
+		51F2B0461B1516FA000EF8BA /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = OAuthSwift/HMAC.swift; sourceTree = "<group>"; };
+		51F2B0471B1516FA000EF8BA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Phobot/Info.plist; sourceTree = "<group>"; };
+		51F2B0481B1516FA000EF8BA /* Int+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+OAuthSwift.swift"; path = "OAuthSwift/Int+OAuthSwift.swift"; sourceTree = "<group>"; };
+		51F2B0491B1516FA000EF8BA /* NSData+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSData+OAuthSwift.swift"; path = "OAuthSwift/NSData+OAuthSwift.swift"; sourceTree = "<group>"; };
+		51F2B04A1B1516FA000EF8BA /* NSURL+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSURL+OAuthSwift.swift"; path = "OAuthSwift/NSURL+OAuthSwift.swift"; sourceTree = "<group>"; };
+		51F2B04B1B1516FA000EF8BA /* OAuth1Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OAuth1Swift.swift; path = OAuthSwift/OAuth1Swift.swift; sourceTree = "<group>"; };
+		51F2B04C1B1516FA000EF8BA /* OAuth2Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OAuth2Swift.swift; path = OAuthSwift/OAuth2Swift.swift; sourceTree = "<group>"; };
+		51F2B04D1B1516FA000EF8BA /* OAuthSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAuthSwift.h; path = OAuthSwift/OAuthSwift.h; sourceTree = "<group>"; };
+		51F2B04E1B1516FA000EF8BA /* OAuthSwiftClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OAuthSwiftClient.swift; path = OAuthSwift/OAuthSwiftClient.swift; sourceTree = "<group>"; };
+		51F2B04F1B1516FA000EF8BA /* OAuthSwiftCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OAuthSwiftCredential.swift; path = OAuthSwift/OAuthSwiftCredential.swift; sourceTree = "<group>"; };
+		51F2B0501B1516FA000EF8BA /* OAuthSwiftHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OAuthSwiftHTTPRequest.swift; path = OAuthSwift/OAuthSwiftHTTPRequest.swift; sourceTree = "<group>"; };
+		51F2B0511B1516FA000EF8BA /* OAuthSwiftURLHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OAuthSwiftURLHandlerType.swift; path = OAuthSwift/OAuthSwiftURLHandlerType.swift; sourceTree = "<group>"; };
+		51F2B0521B1516FA000EF8BA /* OAuthWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OAuthWebViewController.swift; path = OAuthSwift/OAuthWebViewController.swift; sourceTree = "<group>"; };
+		51F2B0531B1516FA000EF8BA /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = OAuthSwift/SHA1.swift; sourceTree = "<group>"; };
+		51F2B0541B1516FA000EF8BA /* String+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+OAuthSwift.swift"; path = "OAuthSwift/String+OAuthSwift.swift"; sourceTree = "<group>"; };
+		51F2B0551B1516FA000EF8BA /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = OAuthSwift/Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +114,10 @@
 		51E186211A485A77009D5E18 = {
 			isa = PBXGroup;
 			children = (
+				51F2B0441B1516E4000EF8BA /* oauth */,
 				51E1862C1A485A77009D5E18 /* Phobot */,
 				51E186451A485A77009D5E18 /* PhobotTests */,
 				51E1862B1A485A77009D5E18 /* Products */,
-				51E186541A485FF2009D5E18 /* OAuthSwift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,16 +134,21 @@
 			isa = PBXGroup;
 			children = (
 				51E1862F1A485A77009D5E18 /* AppDelegate.swift */,
-				51E186521A485CFA009D5E18 /* Model.swift */,
-				51E186341A485A77009D5E18 /* ViewController.swift */,
+				51E897F21A66D72D00EFD994 /* SettingsViewController.swift */,
+				51E897E81A66550400EFD994 /* SelectMethodViewControllerTableViewController.swift */,
+				51E897EE1A66810C00EFD994 /* BotViewController.swift */,
+				51E897EA1A666C6600EFD994 /* InstaWrapper.swift */,
+				51E897F01A66841700EFD994 /* TargetSelectorClassic.swift */,
+				51BD31831B33542400726F96 /* SwiftyJSON.swift */,
+				51E897EC1A667C5800EFD994 /* FeedLoader.swift */,
 				51E186A31A49AD5F009D5E18 /* InstaLoader.swift */,
 				51E186A91A4AC022009D5E18 /* SendLike.swift */,
 				51E186A51A49B1C3009D5E18 /* InstaItem.swift */,
+				51E186521A485CFA009D5E18 /* Model.swift */,
 				51E186361A485A77009D5E18 /* Main.storyboard */,
 				51E186391A485A77009D5E18 /* Images.xcassets */,
 				51E1863B1A485A77009D5E18 /* LaunchScreen.xib */,
 				51E186311A485A77009D5E18 /* Phobot.xcdatamodeld */,
-				51E186A71A49B225009D5E18 /* SwiftyJSON.swift */,
 				51E1862D1A485A77009D5E18 /* Supporting Files */,
 			);
 			path = Phobot;
@@ -151,30 +179,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		51E186541A485FF2009D5E18 /* OAuthSwift */ = {
+		51F2B0441B1516E4000EF8BA /* oauth */ = {
 			isa = PBXGroup;
 			children = (
-				51E186551A485FF2009D5E18 /* extension */,
-				51E186591A485FF2009D5E18 /* HMACSHA1Signature.h */,
-				51E1865A1A485FF2009D5E18 /* HMACSHA1Signature.m */,
-				51E1865B1A485FF2009D5E18 /* OAuth1Swift.swift */,
-				51E1865C1A485FF2009D5E18 /* OAuth2Swift.swift */,
-				51E1865D1A485FF2009D5E18 /* OAuthSwift-Bridging-Header.h */,
-				51E1865E1A485FF2009D5E18 /* OAuthSwiftClient.swift */,
-				51E1865F1A485FF2009D5E18 /* OAuthSwiftCredential.swift */,
-				51E186601A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift */,
+				51F2B0451B1516FA000EF8BA /* Dictionary+OAuthSwift.swift */,
+				51F2B0461B1516FA000EF8BA /* HMAC.swift */,
+				51F2B0471B1516FA000EF8BA /* Info.plist */,
+				51F2B0481B1516FA000EF8BA /* Int+OAuthSwift.swift */,
+				51F2B0491B1516FA000EF8BA /* NSData+OAuthSwift.swift */,
+				51F2B04A1B1516FA000EF8BA /* NSURL+OAuthSwift.swift */,
+				51F2B04B1B1516FA000EF8BA /* OAuth1Swift.swift */,
+				51F2B04C1B1516FA000EF8BA /* OAuth2Swift.swift */,
+				51F2B04D1B1516FA000EF8BA /* OAuthSwift.h */,
+				51F2B04E1B1516FA000EF8BA /* OAuthSwiftClient.swift */,
+				51F2B04F1B1516FA000EF8BA /* OAuthSwiftCredential.swift */,
+				51F2B0501B1516FA000EF8BA /* OAuthSwiftHTTPRequest.swift */,
+				51F2B0511B1516FA000EF8BA /* OAuthSwiftURLHandlerType.swift */,
+				51F2B0521B1516FA000EF8BA /* OAuthWebViewController.swift */,
+				51F2B0531B1516FA000EF8BA /* SHA1.swift */,
+				51F2B0541B1516FA000EF8BA /* String+OAuthSwift.swift */,
+				51F2B0551B1516FA000EF8BA /* Utils.swift */,
 			);
-			path = OAuthSwift;
-			sourceTree = "<group>";
-		};
-		51E186551A485FF2009D5E18 /* extension */ = {
-			isa = PBXGroup;
-			children = (
-				51E186561A485FF2009D5E18 /* Dictionary+OAuthSwift.swift */,
-				51E186571A485FF2009D5E18 /* NSURL+OAuthSwift.swift */,
-				51E186581A485FF2009D5E18 /* String+OAuthSwift.swift */,
-			);
-			path = extension;
+			name = oauth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F2B0581B1516FA000EF8BA /* Info.plist in Resources */,
 				51E186381A485A77009D5E18 /* Main.storyboard in Resources */,
 				51E1863D1A485A77009D5E18 /* LaunchScreen.xib in Resources */,
 				51E1863A1A485A77009D5E18 /* Images.xcassets in Resources */,
@@ -278,23 +305,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F2B05D1B1516FA000EF8BA /* OAuth2Swift.swift in Sources */,
 				51E186A61A49B1C3009D5E18 /* InstaItem.swift in Sources */,
-				51E186661A485FF2009D5E18 /* OAuth2Swift.swift in Sources */,
-				51E186691A485FF2009D5E18 /* OAuthSwiftHTTPRequest.swift in Sources */,
+				51F2B0641B1516FA000EF8BA /* String+OAuthSwift.swift in Sources */,
+				51F2B0651B1516FA000EF8BA /* Utils.swift in Sources */,
 				51E186AA1A4AC022009D5E18 /* SendLike.swift in Sources */,
-				51E186351A485A77009D5E18 /* ViewController.swift in Sources */,
+				51F2B05B1B1516FA000EF8BA /* NSURL+OAuthSwift.swift in Sources */,
+				51E897EB1A666C6600EFD994 /* InstaWrapper.swift in Sources */,
+				51F2B0621B1516FA000EF8BA /* OAuthWebViewController.swift in Sources */,
+				51F2B0591B1516FA000EF8BA /* Int+OAuthSwift.swift in Sources */,
 				51E186301A485A77009D5E18 /* AppDelegate.swift in Sources */,
-				51E186631A485FF2009D5E18 /* String+OAuthSwift.swift in Sources */,
-				51E186621A485FF2009D5E18 /* NSURL+OAuthSwift.swift in Sources */,
-				51E186611A485FF2009D5E18 /* Dictionary+OAuthSwift.swift in Sources */,
-				51E186671A485FF2009D5E18 /* OAuthSwiftClient.swift in Sources */,
+				51F2B05A1B1516FA000EF8BA /* NSData+OAuthSwift.swift in Sources */,
+				51E897E91A66550400EFD994 /* SelectMethodViewControllerTableViewController.swift in Sources */,
+				51F2B0561B1516FA000EF8BA /* Dictionary+OAuthSwift.swift in Sources */,
+				51F2B0611B1516FA000EF8BA /* OAuthSwiftURLHandlerType.swift in Sources */,
 				51E186331A485A77009D5E18 /* Phobot.xcdatamodeld in Sources */,
-				51E186641A485FF2009D5E18 /* HMACSHA1Signature.m in Sources */,
-				51E186A81A49B225009D5E18 /* SwiftyJSON.swift in Sources */,
-				51E186651A485FF2009D5E18 /* OAuth1Swift.swift in Sources */,
-				51E186681A485FF2009D5E18 /* OAuthSwiftCredential.swift in Sources */,
+				51F2B0601B1516FA000EF8BA /* OAuthSwiftHTTPRequest.swift in Sources */,
+				51E897F31A66D72D00EFD994 /* SettingsViewController.swift in Sources */,
+				51F2B05C1B1516FA000EF8BA /* OAuth1Swift.swift in Sources */,
 				51E186A41A49AD5F009D5E18 /* InstaLoader.swift in Sources */,
+				51BD31841B33542400726F96 /* SwiftyJSON.swift in Sources */,
+				51E897ED1A667C5800EFD994 /* FeedLoader.swift in Sources */,
 				51E186531A485CFA009D5E18 /* Model.swift in Sources */,
+				51F2B05F1B1516FA000EF8BA /* OAuthSwiftCredential.swift in Sources */,
+				51F2B0571B1516FA000EF8BA /* HMAC.swift in Sources */,
+				51E897EF1A66810C00EFD994 /* BotViewController.swift in Sources */,
+				51F2B0631B1516FA000EF8BA /* SHA1.swift in Sources */,
+				51E897F11A66841700EFD994 /* TargetSelectorClassic.swift in Sources */,
+				51F2B05E1B1516FA000EF8BA /* OAuthSwiftClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "OAuthSwift/OAuthSwift-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
 			name = Debug;
 		};
@@ -439,7 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "OAuthSwift/OAuthSwift-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
 			name = Release;
 		};

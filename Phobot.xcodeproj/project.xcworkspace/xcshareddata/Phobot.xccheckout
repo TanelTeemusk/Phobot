@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>62038297-22DC-438D-9628-123FAF6C9986</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Phobot</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DE266DA9CA210A3430A2861151DC321ED06C6743</key>
+		<string>https://github.com/TanelTeemusk/Phobot.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Phobot.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DE266DA9CA210A3430A2861151DC321ED06C6743</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TanelTeemusk/Phobot.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DE266DA9CA210A3430A2861151DC321ED06C6743</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DE266DA9CA210A3430A2861151DC321ED06C6743</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Phobot</string>
+		</dict>
+	</array>
+</dict>
+</plist>

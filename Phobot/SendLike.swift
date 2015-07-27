@@ -46,57 +46,48 @@ class SendLike: NSObject {
             }
             
             var err: NSError?
-            
-            dispatch_async(dispatch_get_main_queue(), {
-                self.dataReceived(data)
-            })
+            if(err == nil){
+                dispatch_async(dispatch_get_main_queue(), {
+                    if(data != nil){
+                        self.dataReceived(data)
+                    }else{
+                        self.delegate.messageFromLikeClass(false, user:self.cur_user!,message: "Returned data from service was bad somehow")
+                    }
+                })
+            }else{
+                self.delegate.messageFromLikeClass(false, user:self.cur_user!,message: err!.localizedDescription)
+            }
             
         })
         task.resume()
-        /*
-        
-        
-        var connection: NSURLConnection = NSURLConnection(request: request, delegate: self, startImmediately: false)!
-        connection.start()
-        
-        */
-
-    }
+        }
+    
     func dataReceived(data:NSData){
-        let json = JSON(data: data)
+        println("------ dataReceived ------")
         
-        let errcode:String = json["meta"]["code"].stringValue! //json["data"].arrayValue!
-        println(errcode)
+        let json = JSON(data: data)
         println(json)
         
-        if(errcode != "429"){
+        var metacode:String? = json["meta"]["code"].stringValue
+        if metacode != nil {
+            let errcode:String = json["meta"]["code"].stringValue //json["data"].arrayValue!
+            println(errcode)
+      
+        
+            if(errcode != "429"){
             
-            delegate.messageFromLikeClass(true, user:cur_user!,message: "OK")
+                delegate.messageFromLikeClass(true, user:cur_user!,message: "OK")
+            }else{
+                delegate.messageFromLikeClass(false, user:cur_user!,message: errcode)
+            
+            }
         }else{
-            delegate.messageFromLikeClass(false, user:cur_user!,message: errcode)
-            
+            delegate.messageFromLikeClass(false, user:cur_user!,message: "Not sure what happened, but there was no data")
         }
         
     }
 
     
     
-    
-    /*
-    func connection(connection: NSURLConnection!, didReceiveData data: NSData!){
-        self.data.setData(data)
-    }
-    
-    
-    
-    func connectionDidFinishLoading(connection: NSURLConnection!) {
-        var err: NSError
-        
-        
-    
-    }
-
-*/
-    
-
+  
 }

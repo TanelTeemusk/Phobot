@@ -7,12 +7,13 @@
 //
 
 import Foundation
-import UIKit
 
-class OAuth2Swift {
-    
-    var client: OAuthSwiftClient
-    
+public class OAuth2Swift: NSObject {
+
+    public var client: OAuthSwiftClient
+
+    public var authorize_url_handler: OAuthSwiftURLHandlerType = OAuthSwiftOpenURLExternally.sharedInstance
+
     var consumer_key: String
     var consumer_secret: String
     var authorize_url: String
@@ -20,18 +21,17 @@ class OAuth2Swift {
     var response_type: String
     var observer: AnyObject?
     
-    convenience init(consumerKey: String, consumerSecret: String, authorizeUrl: String, accessTokenUrl: String, responseType: String){
+    public convenience init(consumerKey: String, consumerSecret: String, authorizeUrl: String, accessTokenUrl: String, responseType: String){
         self.init(consumerKey: consumerKey, consumerSecret: consumerSecret, authorizeUrl: authorizeUrl, responseType: responseType)
         self.access_token_url = accessTokenUrl
     }
 
-    init(consumerKey: String, consumerSecret: String, authorizeUrl: String, responseType: String){
+    public init(consumerKey: String, consumerSecret: String, authorizeUrl: String, responseType: String){
         self.consumer_key = consumerKey
         self.consumer_secret = consumerSecret
         self.authorize_url = authorizeUrl
         self.response_type = responseType
         self.client = OAuthSwiftClient(consumerKey: consumerKey, consumerSecret: consumerSecret)
-        self.client.credential = OAuthSwiftCredential()
     }
     
     struct CallbackNotification {
@@ -44,20 +44,20 @@ class OAuth2Swift {
         static let appOnlyAuthenticationErrorCode = 1
     }
     
-    typealias TokenSuccessHandler = (credential: OAuthSwiftCredential, response: NSURLResponse?) -> Void
-    typealias FailureHandler = (error: NSError) -> Void
+    public typealias TokenSuccessHandler = (credential: OAuthSwiftCredential, response: NSURLResponse?) -> Void
+    public typealias FailureHandler = (error: NSError) -> Void
     
 
-    func authorizeWithCallbackURL(callbackURL: NSURL, scope: String, state: String, params: Dictionary<String, String> = Dictionary<String, String>(), success: TokenSuccessHandler, failure: ((error: NSError) -> Void)) {
+    public func authorizeWithCallbackURL(callbackURL: NSURL, scope: String, state: String, params: Dictionary<String, String> = Dictionary<String, String>(), success: TokenSuccessHandler, failure: ((error: NSError) -> Void)) {
         self.observer = NSNotificationCenter.defaultCenter().addObserverForName(CallbackNotification.notificationName, object: nil, queue: NSOperationQueue.mainQueue(), usingBlock:{
             notification in
             NSNotificationCenter.defaultCenter().removeObserver(self.observer!)
-            let url = notification.userInfo![CallbackNotification.optionsURLKey] as NSURL
+            let url = notification.userInfo![CallbackNotification.optionsURLKey] as! NSURL
             var parameters: Dictionary<String, String> = Dictionary()
             if ((url.query) != nil){
                 parameters = url.query!.parametersFromQueryString()
             }
-            if ((url.fragment) != nil){
+            if ((url.fragment) != nil && url.fragment!.isEmpty == false) {
                 parameters = url.fragment!.parametersFromQueryString()
             }
             if (parameters["access_token"] != nil){
@@ -65,9 +65,10 @@ class OAuth2Swift {
                 success(credential: self.client.credential, response: nil)
             }
             if (parameters["code"] != nil){
-                self.postOAuthAccessTokenWithRequestTokenByCode(parameters["code"]!, success: {
-                    credential, response in
-                    success(credential: credential, response: response)
+                self.postOAuthAccessTokenWithRequestTokenByCode(parameters["code"]!.stringByRemovingPercentEncoding!,
+                    callbackURL:callbackURL,
+                    success: { credential, response in
+                        success(credential: credential, response: response)
                 }, failure: failure)
                     
             }
@@ -75,7 +76,7 @@ class OAuth2Swift {
         //let authorizeURL = NSURL(string: )
         var urlString = String()
         urlString += self.authorize_url
-        urlString += "?client_id=\(self.consumer_key)"
+        urlString += (self.authorize_url.has("?") ? "&" : "?") + "client_id=\(self.consumer_key)"
         urlString += "&redirect_uri=\(callbackURL.absoluteString!)"
         urlString += "&response_type=\(self.response_type)"
         if (scope != "") {
@@ -89,27 +90,37 @@ class OAuth2Swift {
             urlString += "&\(param.0)=\(param.1)"
         }
 
-        let queryURL = NSURL(string: urlString)
-        UIApplication.sharedApplication().openURL(queryURL!)
+        if let queryURL = NSURL(string: urlString) {
+           self.authorize_url_handler.handle(queryURL)
+        }
     }
     
-    func postOAuthAccessTokenWithRequestTokenByCode(code: String, success: TokenSuccessHandler, failure: FailureHandler?) {
+    func postOAuthAccessTokenWithRequestTokenByCode(code: String, callbackURL: NSURL, success: TokenSuccessHandler, failure: FailureHandler?) {
         var parameters = Dictionary<String, AnyObject>()
         parameters["client_id"] = self.consumer_key
         parameters["client_secret"] = self.consumer_secret
         parameters["code"] = code
         parameters["grant_type"] = "authorization_code"
+        parameters["redirect_uri"] = callbackURL.absoluteString!
         
         self.client.post(self.access_token_url!, parameters: parameters, success: {
             data, response in
-            let responseString = NSString(data: data, encoding: NSUTF8StringEncoding) as String
-            let parameters = responseString.parametersFromQueryString()
-            self.client.credential.oauth_token = parameters["access_token"]!
+            var responseJSON: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)
+            var accessToken = ""
+            if let parameters:NSDictionary = responseJSON as? NSDictionary{
+                accessToken = parameters["access_token"] as! String
+            } else {
+                let responseString = NSString(data: data, encoding: NSUTF8StringEncoding) as String!
+                let parameters = responseString.parametersFromQueryString()
+                accessToken = parameters["access_token"]!
+            }
+            self.client.credential.oauth_token = accessToken
+            self.client.credential.oauth2 = true
             success(credential: self.client.credential, response: response)
         }, failure: failure)
     }
     
-    class func handleOpenURL(url: NSURL) {
+    public class func handleOpenURL(url: NSURL) {
         let notification = NSNotification(name: CallbackNotification.notificationName, object: nil,
             userInfo: [CallbackNotification.optionsURLKey: url])
         NSNotificationCenter.defaultCenter().postNotification(notification)

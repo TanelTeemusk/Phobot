@@ -120,8 +120,8 @@ class InstaLoader :NSObject, SendLikeDelegate{
         let json = JSON(data: _data)
         
        // println(json)
-        if(!json){
-            println("SOMETHING WENT TRULY BAD \(api_retries)")
+        if(json == nil){
+            println("SOMETHING WENT TRULY BAD in InstaLoader \(api_retries)")
             if !botting {
                 return
             }
@@ -135,26 +135,26 @@ class InstaLoader :NSObject, SendLikeDelegate{
             return;
             
         }
-        if json["pagination"]["next_url"].stringValue != nil {
-            next_url = json["pagination"]["next_url"].stringValue!
+        if json["pagination"]["next_url"].string != nil {
+            next_url = json["pagination"]["next_url"].stringValue
         }else{
             next_url = "";
         }
        
-        let jsdata:Array! = json["data"].arrayValue!
+        let jsdata:Array! = json["data"].arrayValue
         var max_reached:Bool = false
         
         for itm in jsdata{
-            if(itm["caption"]["text"].stringValue != nil){
+            if(itm["caption"]["text"].string != nil){
                 var obj = InstaItem()
-                var caption:String = itm["caption"]["text"].stringValue! 
+                var caption:String = itm["caption"]["text"].stringValue 
                 
-                var imgurl:String = itm["images"]["standard_resolution"]["url"].stringValue!
-                var date:String = itm["created_time"].stringValue!
-                var likecount:Int = itm["likes"]["count"].integerValue!
-                var username:String = itm["user"]["username"].stringValue!
-                var userid:String = itm["user"]["id"].stringValue!
-                var mediaid:String = itm["id"].stringValue!
+                var imgurl:String = itm["images"]["standard_resolution"]["url"].stringValue
+                var date:String = itm["created_time"].stringValue
+                var likecount:Int = itm["likes"]["count"].intValue
+                var username:String = itm["user"]["username"].stringValue
+                var userid:String = itm["user"]["id"].stringValue
+                var mediaid:String = itm["id"].stringValue
                 obj.caption = caption
                 obj.url = imgurl
                 obj.date = date
@@ -237,10 +237,10 @@ class InstaLoader :NSObject, SendLikeDelegate{
     func messageFromLikeClass(success:Bool,user:InstaItem, message:String){
         if(!success){
             
-            delegate.notifyDebug("Overheated. Gonna try again in 5 minutes\n")
+            delegate.notifyDebug("Overheated. Gonna try again in 3 minutes\n")
             killTimer()
-            timer = NSTimer.scheduledTimerWithTimeInterval(300, target: self, selector: Selector("startLiking"), userInfo: nil, repeats: false)
-            startCountdown(300)
+            timer = NSTimer.scheduledTimerWithTimeInterval(180, target: self, selector: Selector("startLiking"), userInfo: nil, repeats: false)
+            startCountdown(180)
         }else{
             let candidate = chosen_candidates.removeAtIndex(0)
             delegate.notifyDebug("added like to user:\(user.username)\n")

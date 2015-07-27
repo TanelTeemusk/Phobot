@@ -12,8 +12,8 @@ class ViewController: UIViewController, InstaLoaderDelegate, UITextFieldDelegate
 
     
     
-    let clientid = "YOUR CLIENT ID HERE";
-    let clientsecret = "YOUR CLIENT SECRET";
+    let clientid = "cc2ae60f511240f8a2462937bb612924";
+    let clientsecret = "b0ad13876e1f4d889879ec2f225fdbea";
     var access_token = "";
     
     @IBOutlet weak var txt_countdown: UILabel!
@@ -27,11 +27,16 @@ class ViewController: UIViewController, InstaLoaderDelegate, UITextFieldDelegate
     var model = Model();
     var loader:InstaLoader = InstaLoader();
     var botting:Bool = false;
+    var bot_method = ""
     
     var textarea_text:String = "";
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        println("Bot method: \(bot_method)")
+        
         let persobj = model.getPersonData();
         if(persobj != nil){
             access_token = persobj.valueForKey("access_token") as String
@@ -47,8 +52,10 @@ class ViewController: UIViewController, InstaLoaderDelegate, UITextFieldDelegate
             loader.token = self.access_token
             loader.secert = self.clientsecret
             loader.clientid = self.clientid
+            dispatch_async(dispatch_get_main_queue(), {
+                self.model.initPastLikes()
+            })
             
-            model.initPastLikes()
             
         }
         txt_hashtag.delegate = self
@@ -110,21 +117,7 @@ class ViewController: UIViewController, InstaLoaderDelegate, UITextFieldDelegate
             self.access_token = credential.oauth_token;
             self.model.savePersonData(credential.oauth_token);
             self.loginview.removeFromSuperview();
-           // self.showAlertView("Instagram", message: "oauth_token:\(credential.oauth_token)")
-            
-            /*
-            let url :String = "https://api.instagram.com/v1/users/1574083/?access_token=\(credential.oauth_token)"
-            let parameters :Dictionary = Dictionary<String, AnyObject>()
-            oauthswift.client.get(url, parameters: parameters,
-                success: {
-                    data, response in
-                    let jsonDict: AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil)
-                    println(jsonDict)
-                }, failure: {(error:NSError!) -> Void in
-                    println(error)
-            })
-            */
-
+           
 
             }, failure: {(error:NSError!) -> Void in
                 println(error.localizedDescription)
